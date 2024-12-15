@@ -1,0 +1,132 @@
+@import 'font.scss';
+@import 'nullstyle.scss';
+// animation-name:white-circle ;
+// animation-duration: 2s;
+// animation-timing-function:linear ;
+// animation-iteration-count:1;
+// animation-direction: alternate;
+// animation-delay: 0s;
+// animation-fill-mode:none;
+// background: url('../img/burger.png') 0 0/ 100% 100% no-repeat;
+
+:root {
+	--font-fam-first: 'Open Sans';
+	--font-fam-second: 'Roboto';
+	--light-color: #ffff;
+	--black-color: #000000;
+	--first-color: #4699ff;
+	--second-color: #0073ff;
+	--third-color:#052b59;
+	--font-weight: 800;
+}
+body {
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.header__container {
+	background: var(--first-color);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.__container {
+	max-width: 900px;
+	padding: 20px;
+	margin: 0 auto;
+}
+.header__info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: start;
+}
+.header__img {
+	overflow: hidden;
+	border-radius: 50%;
+	max-width: 60px;
+	max-height: 60px;
+	img {
+		object-fit: cover;
+		width: 100%;
+	}
+}
+.header__name {
+	font-family: var(--font-fam-first);
+	font-size: 1.5em;
+	font-weight: 700;
+
+	color: black;
+}
+.header__navigation {
+	width: 30%;
+}
+.header__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__item {
+	cursor: pointer;
+}
+.--videoCall {
+}
+.--Call {
+}
+.--More {
+}
+
+.chat {
+	margin-top: 97px;
+}
+.chat__container {
+	background: var(--third-color);
+	height: 100vh;
+	padding: 20px;
+
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.area-message {
+}
+.area-message__container {
+	background: var(--light-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	height: 100px;
+}
+form {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.area-message__message {
+	overflow: hidden;
+	width: 95%;
+	text-decoration: none;
+	outline: none;
+	background: inherit;
+	border: none;
+	font-size: 1.6em;
+}
+.area-message__send-message {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background: inherit;
+}
